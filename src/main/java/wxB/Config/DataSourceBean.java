@@ -37,9 +37,9 @@ public class DataSourceBean {
     public BasicDataSource dataSourceDBCP(){
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/wx?serverTimezone=UTC&characterEncoding=utf8&useSSL=false");
+        ds.setUrl("jdbc:mysql://35.194.166.10:3306/wx?serverTimezone=UTC&characterEncoding=utf8&useSSL=false");
         ds.setUsername("root");
-        ds.setPassword("1234");
+        ds.setPassword("xiaomeng7890");
         ds.setInitialSize(5);
         ds.setMaxTotal(10);
         return ds;
@@ -50,9 +50,9 @@ public class DataSourceBean {
     public DataSource dataSourceJDBC() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/wx?serverTimezone=UTC&characterEncoding=utf8&useSSL=false");
+        ds.setUrl("jdbc:mysql://35.194.166.10:3306/wx?serverTimezone=UTC&characterEncoding=utf8&useSSL=false");
         ds.setUsername("root");
-        ds.setPassword("1234");
+        ds.setPassword("xiaomeng7890");
         return ds;
 
     }

@@ -43,7 +43,10 @@ public class picContent extends recContent {
                 "</MediaId>";
     }
 
-
+    @Override
+    public String[] toSQL() {
+        return new String[] {getPicUrl() , getMediaId()};
+    }
 
     public static picContent parse(String picUrl, String mediaId) {
         return new picContent(picUrl, mediaId);

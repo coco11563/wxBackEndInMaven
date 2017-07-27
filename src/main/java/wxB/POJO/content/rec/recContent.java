@@ -27,5 +27,8 @@ public abstract class recContent {
         }
         return c;
     }
+    public String[] toSQL() {
+        return null;
+    }
 
 }
